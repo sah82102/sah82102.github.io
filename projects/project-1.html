@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wesbite Project</title>
+        <link rel="stylesheet" href="../styles.css">
+<style> 
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2ecc71;
+        --text-color: #333;
+        --background-color: #f4f4f4;
+    }
+        box-sizing border-box
+        
+        .body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .page {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+
+        }
+
+        .site header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 0;
+        }
+
+        .square3 {
+            width: 100px;
+            height: 100px;
+            background-color: var(--secondary-color);
+            margin: 20px auto;
+        }   
+
+        .header-copy {
+            text-align: center;
+            margin: 20px 0;
+        }   
+
+        .layout {
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            background-color: var(--background-color);
+
+        }
+        .col-a
+        .col-b 
+        .col-50
+        .col-33
+        .col-100{
+            padding: 20px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        } 
+
+        .col-a {
+            grid-column: 1 / span 2;
+            flex: 1 1 100%;
+    
+        }
+
+        .col-b {
+            grid-column: 3 / span 1;
+            flex: 1 1 100%;
+        }
+
+        .col-50 {
+            grid-column: 1 / span 2;
+            flex: 1 1 50%;
+        }
+
+        .col-33 {
+            grid-column: 1 / span 1;
+            flex: 1 1 33.33%;
+        }
+
+        .col-100 {
+            grid-column: 1 / span 3;
+            flex: 1 1 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            padding: 20px;
+        }
+        #toggle-nav-btn {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;    
+        }
+
+        #primary-nav {
+         background-color: var(--primary-color);
+            color: white;
+            padding: 10px;
+        }
+
+        #primary-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #primary-nav li {
+            list-style: none;
+            display: inline-block;
+        }
+        #primary-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
