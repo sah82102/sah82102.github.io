@@ -1,0 +1,52 @@
+<!Doctype html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 5</title>
+
+<style> 
+body {
+        margin: 0;
+        padding: 0; 
+        background-color: rgb(123, 148, 158);
+    } 
+    img {
+        max-width: 100%;
+        height: auto;
+    } 
+    main {
+        padding: 1em;
+    }  
+    #toggle-nav-button {
+        display: none;
+        position: absolute; 
+        right: 1rem;  
+        top: 1rem;
+    } 
+    #primary-nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(68, 126, 156);
+        padding: 0.5em 0;
+    } 
+    #primary-nav a {
+        color: white;
+        text-decoration: none;
+
+    }
+   #primary-nav a:hover {
+      color:black;
+       text-decoration: underline;
+       transition: text-decoration 0.3s;
+   }    
+</style>
+</head> 
+<body>
+    <button id="toggle-nav-button">Menu</button>
+    <nav id="primary-nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</body>
+</html> 
