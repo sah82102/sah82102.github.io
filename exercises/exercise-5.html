@@ -1,52 +1,78 @@
-<!Doctype html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Exercise 5</title>
-
-<style> 
-body {
-        margin: 0;
-        padding: 0; 
-        background-color: rgb(123, 148, 158);
-    } 
-    img {
-        max-width: 100%;
-        height: auto;
-    } 
-    main {
-        padding: 1em;
-    }  
-    #toggle-nav-button {
-        display: none;
-        position: absolute; 
-        right: 1rem;  
-        top: 1rem;
-    } 
-    #primary-nav {
-        display: flex;
-        justify-content: space-around;
-        background-color: rgb(68, 126, 156);
-        padding: 0.5em 0;
-    } 
-    #primary-nav a {
-        color: white;
-        text-decoration: none;
-
-    }
-   #primary-nav a:hover {
-      color:black;
-       text-decoration: underline;
-       transition: text-decoration 0.3s;
-   }    
-</style>
-</head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Songs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <button id="toggle-nav-button">Menu</button>
-    <nav id="primary-nav">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+
+  <header class="navbar">
+    <div class="logo-text">My Music</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#song1">Song One</a>
+      <a href="#song2">Song Two</a>
+      <a href="#song3">Song Three</a>
     </nav>
+  </header>
+
+  <main>
+
+    <section class="home" id="home">
+      <h1>My Current Favorites</h1>
+      <p>Here are some of my current favorite songs, in no particular order.</p>
+    </section>
+
+    <section class="song" id="song1">
+      <h2>Stand by Me</h2>
+      <p>Stephen Wilson Jr. - Live at the Print Shop</p>
+
+      <div class="song-content">
+        <img src="stand-by-me-cover.jpg" alt="Stand by Me cover art">
+
+        <div class="spotify">
+          <img src="stand-by-me-code.jpg" alt="Spotify Code for Stand by Me">
+          <p>Scan with Spotify app to listen!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="song" id="song2">
+      <h2>Van Gogh</h2>
+      <p>Pony Bradshaw</p>
+
+      <div class="song-content">
+        <img src="van-gogh-cover.jpg" alt="Van Gogh cover art">
+
+        <div class="spotify">
+          <img src="van-gogh-code.jpg"alt="Spotify Code for Van Gogh">
+          <p>Scan with Sotify app to listen!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="song" id="song3">
+      <h2>Gypsy</h2>
+      <p>Fleetwood Mac</p>
+
+      <div class="song-content">
+     <img src="gypsy-cover.jpg" alt="Fleetwood Mac album cover">
+
+        <div class="spotify">
+          <img src="gypsy-code.jpg" alt="Spotify Code for Gypsy">
+          <p>Scan with Spotify app to listen!</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Some songs just stay with you.</p>
+  </footer>
+
 </body>
-</html> 
+</html>
