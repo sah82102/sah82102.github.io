@@ -1,0 +1,266 @@
+/* Brews & Bonds styles
+   Colors: brown #3E2723, mid brown #5D4037, tan #C8A27A, cream #FAF3E8,
+           sand #F3E6D3, sage #8A9A5B, dark sage #5F6B3A */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #FAF3E8;
+  color: #4E342E;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #3E2723;
+  margin: 0 0 10px 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  color: #5F6B3A;
+}
+
+/* Centers the content on the page */
+.box {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ---------- Header and navigation ---------- */
+header {
+  background: #3E2723;
+  padding: 15px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #FAF3E8;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #FAF3E8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+  color: #C8A27A;
+}
+
+/* The checkbox and hamburger button are hidden on big screens */
+#menu-toggle,
+.hamburger {
+  display: none;
+}
+
+/* ---------- Buttons ---------- */
+.button {
+  display: inline-block;
+  background: #C8A27A;
+  color: #3E2723;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ---------- Home page ---------- */
+.intro {
+  background: #5D4037;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.intro h1 {
+  color: white;
+  font-size: 42px;
+}
+
+.intro p {
+  color: #FAF3E8;
+  font-size: 20px;
+}
+
+.banner img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.sand {
+  background: #F3E6D3;
+}
+
+/* Rows put things side by side on big screens and stack on small screens */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.row > * {
+  flex: 1 1 300px;
+}
+
+.row.top {
+  align-items: stretch;
+}
+
+.row img {
+  border-radius: 12px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card .text {
+  padding: 20px;
+}
+
+/* ---------- Menu and Events page titles ---------- */
+.title {
+  background: #F3E6D3;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.title h1 {
+  font-size: 42px;
+}
+
+/* ---------- Menu page ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+td {
+  padding: 8px 0;
+  border-bottom: 1px solid #E0CFB8;
+}
+
+td.price {
+  text-align: right;
+  color: #5F6B3A;
+  font-weight: 600;
+}
+
+small {
+  display: block;
+}
+
+/* ---------- Events page ---------- */
+.day {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.day h3 {
+  font-family: Inter, Arial, sans-serif;
+  margin: 15px 0 0 0;
+}
+
+.day p {
+  margin: 0;
+}
+
+.time {
+  color: #5F6B3A;
+  font-weight: 600;
+}
+
+.note {
+  background: #8A9A5B;
+  color: white;
+}
+
+.note h2 {
+  color: white;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #3E2723;
+  color: #FAF3E8;
+}
+
+footer h2 {
+  color: #C8A27A;
+  font-size: 20px;
+}
+
+footer a {
+  color: #FAF3E8;
+}
+
+.copyright {
+  text-align: center;
+  color: #C8A27A;
+  margin: 0;
+  padding: 0 20px 20px 20px;
+}
+
+/* ---------- Small screens (phones) ---------- */
+@media (max-width: 700px) {
+  .hamburger {
+    display: block;
+    font-size: 32px;
+    color: #FAF3E8;
+    cursor: pointer;
+  }
+
+  /* Hide the links until the hamburger is clicked */
+  nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 15px;
+  }
+
+  #menu-toggle:checked ~ nav {
+    display: flex;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+  }
+
+  .banner img {
+    height: 220px;
+  }
+}
